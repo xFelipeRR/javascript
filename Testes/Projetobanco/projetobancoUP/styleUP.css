@@ -1,0 +1,42 @@
+section{
+    background: blue;
+    width: 700px;
+    font: 20px Arial ;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+    padding: 10px;
+    border-radius: 30px;
+    margin: auto;
+    padding-block-end: 30pt;
+}
+h1{
+    font: normal;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+body{
+    background: rgb(224, 224, 6);
+}
+div#res{
+    color: black;
+    
+    
+}
+button#botao{
+    width:50px;
+    height: 40px;
+    background: yellow;
+    margin-left: 5pt;
+    margin-top: 20pt;
+    border-width: medium;
+    border-style: solid;
+    border-color: black;
+    margin-top: 40pt;
+}
+button{
+    width: 100px;
+    height: 20px;
+    background: orangered;
+}

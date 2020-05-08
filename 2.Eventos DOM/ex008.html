@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+</head>
+<body>
+    <style>
+        body{
+            background: blue;
+            font: normal 20pt Arial;
+            color: white;
+        }
+    </style>
+    <h1>Iniciando os estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong> DOM</strong> em JavaScript</p>
+    <!--<div name='msg'>Clique em mim</div>-->
+    <div id='msg'>Clique em mim</div>
+    <div id='msg1'>Teste</div>
+    <script>
+        var corpo=window.document.body
+        var p1=window.document.getElementsByTagName('p')[0] //como tem mais de um p, é usado um array para escolher a tag no caso 0 é a primeira
+        window.document.write('O parágrafo 1 ,está escrito assim: '+p1.innerText+'<br>')//pega apenas o texto
+        var p2=window.document.getElementsByTagName('p')[1]
+        window.document.write('O parágrafo 2 ,está escrito assim: '+p2.innerHTML+'<br>')//pega o texto já formatado
+        corpo.style.background='black'
+        p1.style.color='white'
+/*Com Id
+var d=window.document.getElementById('msg')
+        d.style.background='green'
+        d.innerText='Estou aguardando...' 
+/Com Name        
+        
+        var d=window.document.getElementsByName('msg')[0]
+        d.style.background='green'
+        d.innerText='Estou aguardando'
+
+/Com querySelector
+*/
+
+        var d=window.document.querySelector('div#msg')
+        d.style.color='blue'
+        var d1=window.document.querySelector('div#msg1')
+        d1.style.background='green'
+    </script>
+</body>
+</html>

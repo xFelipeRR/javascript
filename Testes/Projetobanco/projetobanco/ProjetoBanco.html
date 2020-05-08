@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de Banco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Teste de Banco</h1>
+</header>
+
+<section>
+    <h2>Seja bem vindo ao banco!</h2>
+    <h3>Qual o valor disponível em sua conta? <input type="number" name="stand" id="stand"></h3>
+    <h3>Valor para a operação que irá escolher: <input type="number" name="escolha" id="escolha"></h3>
+    <h3>Qual das opções abaixo você deseja efetuar?</h3>
+    <input type="button" value="Saque" onclick="sacar()">
+    <input type="button" value="Depósito" onclick="depositar()">
+    <div id="res">
+
+    </div>
+</section>
+    <script src="script.js"></script>
+
+</body>
+</html>

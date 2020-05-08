@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=[5, 2, 8, 9, 3]
+num.push(1) // Cria o número informado "1" sem ter que colocar a posição do array
+num.sort()
+document.write(num)
+document.write(`<br> O vetor tem ${num.length} elementos!<br>`)
+document.write(`O primeiro valor do vetor é ${num[0]}<br>`)
+
+let c=0
+while(c<num.length){
+    document.write(`Array ${c} : ${num[c]}<br>`)
+    c++
+
+}
+    </script>
+</body>
+</html>

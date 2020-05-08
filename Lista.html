@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(19, 19, 167);
+        }
+    </style>
+</head>
+<body>
+    <h1>--------Lista de Estudos--------</h1>
+    Digite assuntos de interesse: <input type="text" name="interesse" id="interesse"><br>
+    <input type="button" value="Adicionar" onclick="adicionar()">
+    <div id="lugar"></div>
+    <script>
+        function adicionar(){
+            var conteudo=document.getElementById('interesse')
+            var lugar=document.getElementById('lugar')
+            if(conteudo.value.length==0){
+                alert('Valor inválido')
+            }else{
+            var li=document.createElement('li')
+            li.setAttribute('id','li')
+            li.innerHTML=(conteudo.value)
+            lugar.appendChild(li)
+            }
+    
+        }
+            var terminar=document.createElement('button')
+            terminar.setAttribute('id','terminar')
+            document.write ("<br>")
+            terminar.textContent='Verificar'
+            document.body.appendChild(terminar)
+
+    </script>
+</body>
+</html>

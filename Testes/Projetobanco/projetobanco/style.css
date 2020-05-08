@@ -1,0 +1,25 @@
+section{
+    background: blue;
+    width: 700px;
+    font: 20px Arial ;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+    padding: 10px;
+    border-radius: 30px;
+    margin: auto;
+}
+h1{
+    font: normal;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+body{
+    background: rgb(224, 224, 6);
+}
+div#res{
+    color: black;
+    background-color:green ;
+    
+}

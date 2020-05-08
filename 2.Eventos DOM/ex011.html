@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando</title>
+</head>
+<body>
+    <h1>Multiplicando Números</h1>
+    <input type="number" name="txtn1" id="txtn1"> X
+    <input type="number" name="txtn2" id="txtn2"> X
+    <input type="number" name="txtn3" id="txtn3"> =
+    <input type="button" value="Multiplicar" onclick="Multiplicar()">
+    <div id='res'>Resultado da multiplicação:</div>
+    <script>
+        function Multiplicar(){
+        var tn1=document.getElementById('txtn1')
+        var tn2=document.getElementById('txtn2')
+        var tn3=document.getElementById('txtn3')
+        var res=document.getElementById('res')
+        var n1=Number(tn1.value)
+        var n2=Number(tn2.value)
+        var n3=Number(tn3.value)
+        var mult=n1*n2*n3
+        res.innerText=`A multiplicação entre ${n1}, ${n2} e ${n3} é igual a ${mult}`
+        }
+    </script>
+</body>
+</html>

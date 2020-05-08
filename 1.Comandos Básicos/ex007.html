@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coisa pra caramba</title>
+    <style>
+    body{
+        background-color: black;
+        color: white;
+        font: Normal 19pt Arial;
+        
+    }
+    h1{color: rgb(20, 139, 9);}
+    </style>
+</head>
+<body>
+    <h1>Bem vindo!</h1>
+    <p>Seus dados estão abaixo:</p>
+    <script>
+    var nome=prompt("Qual é o seu nome? ")
+    var idade=prompt("Quantos anos você tem? ")
+    var ocupação=prompt("Com o que você trabalha? ")
+    var salario=Number(prompt("Qual é o seu salário? "))
+    var gasto=Number(prompt("Quanto você gastou nesse mês? "))
+    var receita=salario-gasto
+    
+    document.write(`Nome:<strong>${nome.toUpperCase()}</strong><br>`)
+    document.write(`Idade:${idade}<br>`)
+    document.write(`Ocupação:${ocupação}<br>`)
+    document.write(`Salário: ${salario.toLocaleString('pt-br',{style:'currency', currency:'BRL'})}<br>`)
+    document.write(`Despesa deste mês: ${gasto.toLocaleString('pt-br',{style:'currency',currency:'BRL'})}<br>`)
+    document.write(`Receita final do mês:${receita.toLocaleString('pt-br',{style:'currency',currency:'BRL'})}<br>`)
+    </script>
+</body>
+</html>
